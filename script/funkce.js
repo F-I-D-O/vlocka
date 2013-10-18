@@ -4,7 +4,9 @@ function jeValidniUrl(url){
 }
 
 function dialogUrl(oznacenyText, funkceProZapisOdkazu){
-	
+	$('#dialog_url').dialog({
+		
+	});
 }
 
 

@@ -147,7 +147,7 @@ final class Styl extends Odkaz{
 	/* METODY */
 	public function vypis_odkaz(){
 		$parametr_casove_znamky = parametr_casove_znamky($this->cesta);
-		echo '<link href="' . $this->adresa . $parametr_casove_znamky . '" rel="stylesheet" type="text/css">';
+		echo "\t<link href='" . $this->adresa . $parametr_casove_znamky . "' rel='stylesheet' type='text/css'>\n";
 	}
 	
 /**************************************************
@@ -155,7 +155,7 @@ final class Styl extends Odkaz{
  **************************************************/
 	
 	/* KONSTANTY */
-	const PRIPONA_STYLU = 'css';
+	const PRIPONA_STYLU = "css";
 	
 	// soubory stylů
 	const SOUBOR_STYL = 'style.css';
@@ -190,10 +190,10 @@ final class Skript extends Odkaz{
 	public function vypis_odkaz(){
 		if($this->vypis_casovou_znamku === true){
 			$parametr_casove_znamky = parametr_casove_znamky($this->cesta);
-			echo '<script src="' . $this->adresa . $parametr_casove_znamky . '"></script>';
+			echo "\t<script src='" . $this->adresa . $parametr_casove_znamky . "'></script>\n";
 		}
 		else{
-			echo '<script src="'  . $this->adresa . '"></script>';
+			echo "\t<script src='"  . $this->adresa . "'></script>\n";
 		}
 	}
 	
