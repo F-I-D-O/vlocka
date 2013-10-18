@@ -113,12 +113,12 @@ abstract class Odkaz{
 	 * vloží do pole stylů defaultní styly
 	 */
 	public static function pridej_defaultni_odkazy(){
+		self::pridej_odkaz(new Skript(Skript::ADRESA_JQUERY, false, true));
+		self::pridej_odkaz(new Skript(Skript::ADRESA_JQUERY_UI, false, true));
+		
 		foreach (self::$defaultni_odkazy as $cesta_k_odkazu){
 			self::pridej_odkaz($cesta_k_odkazu);
 		}
-		
-		self::pridej_odkaz(new Skript(Skript::ADRESA_JQUERY, false, true));
-		self::pridej_odkaz(new Skript(Skript::ADRESA_JQUERY_UI, false, true));
 		
 		if (file_exists(CESTA_INDIV_STYL)) {	
 			self::pridej_odkaz(CESTA_INDIV_STYL);
@@ -190,10 +190,10 @@ final class Skript extends Odkaz{
 	public function vypis_odkaz(){
 		if($this->vypis_casovou_znamku === true){
 			$parametr_casove_znamky = parametr_casove_znamky($this->cesta);
-			echo '<link href="' . $this->adresa . $parametr_casove_znamky . '" rel="stylesheet" type="text/css">';
+			echo '<script src="' . $this->adresa . $parametr_casove_znamky . '"></script>';
 		}
 		else{
-			echo '<link href="' . $this->adresa . '" rel="stylesheet" type="text/css">';
+			echo '<script src="'  . $this->adresa . '"></script>';
 		}
 	}
 	
@@ -291,12 +291,14 @@ Odkaz::pridej_defaultni_odkazy();
 	<!--	<link rel="image_src" href="http://vlocka.skauting.cz/images/ikonyweb/logo3.png">-->
 		
 	<?php 
+	
+	// soubor s individuálními meta informacemi pro stránků
 	require CESTA_SOUBOR_META_INDIV;
 	
+	//výpis všech stylů a skriptů
 	Odkaz::vypis_odkazy();
 	
 	?>
-	
 </head>
 
 <?php
