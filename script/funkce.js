@@ -1,4 +1,21 @@
 
+function jeValidniUrl(url){
+	
+}
+
+function dialogUrl(oznacenyText, funkceProZapisOdkazu){
+	
+}
+
+
+
+
+
+
+/**************************************************
+ * STARÉ
+ **************************************************/
+
 /**
  * Přidá parametr do URL
  * @param url původní adresa

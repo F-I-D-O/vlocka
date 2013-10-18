@@ -1,0 +1,34 @@
+
+#prihlasovaci_formular {
+	float: right;
+	width: 230px;
+	height: 112px;
+	margin: 0px 6px 0 0px; 
+	border: 1px solid white; 
+	border-radius: 5px; 
+	padding: 5px;
+	background-color: #F9BE3C;
+}
+
+#login_text_pole {
+	width: 100px;
+}
+
+#heslo {
+	width: 100px;
+}
+
+#prihlasovaci_formular_prihlasen {
+	float: left;
+}
+
+#login {
+	font-size: 20px;
+	margin: 0px
+}
+
+#role {
+	font-size: 20px;
+}
+
+

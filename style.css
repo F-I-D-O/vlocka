@@ -4,23 +4,6 @@
 ==========================
 */
 
-body {
-	font-family: arial;
-	font-size: 14px;
-	text-align: justify;
-	background: #F9BE3C;
-	margin: 0px; /* musí zde být, body má margin defaultní, ač to vypadá jako hovadina!! */
-}
-
-img {
- 	border: 0px; /* musí zde být, defaultně se okraj vykresluje všude!! */
- 	margin: 0px;
-}
-
-p { 
-	margin: 0 0 10px 0;
-}
-	
 a {
 	text-decoration: none;
 	font-weight: bold;
@@ -30,9 +13,18 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-	
-table {
-	border-collapse: collapse;	
+
+body {
+	font-family: arial;
+	font-size: 14px;
+	text-align: justify;
+	background: #F9BE3C;
+	margin: 0px; /* musí zde být, body má margin defaultní, ač to vypadá jako hovadina!! */
+	padding: 5px;
+}
+
+form {
+	text-align: left;
 }
 
 h1 {
@@ -60,68 +52,57 @@ h4 {
 	font-size: 15px;
 }
 
+img {
+ 	border: 0px; /* musí zde být, defaultně se okraj vykresluje všude!! */
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	padding: 0 0 5px 10px;
+}
+
+
+p { 
+	margin: 0 0 10px 0;
+}
+	
+table {
+	border-collapse: collapse;	
+}
+
+textarea {
+	min-width: 100%;
+	max-width: 100%;
+}
+
+button, input[type="submit"] {
+	cursor: pointer;
+	margin: 10px;
+	padding: 5px;
+	border: 0px;
+	border-radius: 10px
+		
+}
+
+input[type="password"], input[type="text"] {
+	height: 30px;
+}
+
+input[type="password"], input[type="text"], textarea {
+	border-radius: 15px;
+	border: 0px;
+	margin-bottom: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
 /*
 =========================
-----------TŘÍDY----------
+-----IDENTIFIKÁTORY------
 =========================
 */
-
-#hlavni {
-	margin: auto;
-	padding-bottom: 3px;
-	position: relative;
-	width: 1000px;
-	background-color: #26316C;
-	border-radius: 20px;
-}
-
-#zahlavi {
-	float: left;
-	height: 265px; 
-	width: 266px;
-	border-top-left-radius: 20px;
-	
-}
-
-#zahlavi img{
-	width: 245px;
-	margin: 10px
-}
-
-#menu {
-	float: left;
-	width: 480px;
-	height: 30px;
-	padding: 0px 0 0px 0px;
-	margin: 4px 0 4px 0;
-	font-size: 12px;
-	font-weight: bold;
-	text-align: center;
-	border-radius: 5px;
-	border: 1px solid white;
-}
-
-#menu div {
-	float: left;
-	height: 30px;
-}
-
-#menu a {
-	display: inline-block;
-	color: #F9BE3C;
-	background-color: #000037;
-	padding: 8px 0px 0 0px;
-	height: 22px;
-}
-
-#menu a:hover {
-  	color: #000037;
-  	background-color: #F9BE3C;
-  	text-decoration: none;
-}
-
-#vlevo {	
-}
 
 #vpravo{
 	width: 242px;
@@ -135,67 +116,9 @@ h4 {
 #vpravo img{
 	width: 242px;
 	display: block;
-}	
-
-.odkazy {
-	width: 255px;
-	background-color: #FF8800;
-	border-radius: 10px;
-	padding: 0 0 10px 0;
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0px 10px 5px 5px;
 }
 
-.odkazy ul {
-	margin: 0 0 0 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-.odkazy li {
-  margin: 0px 0 0.2em 10px;
-}
-
-.odkazy a {
-	display: block;
-	width: 225px;
-	padding: 0.7em 0.8em 0.7em 0.0em;
-	text-align: right;
-	color: #F9BE3C;
-	background: #000037;
-	margin: 0;
-	border-radius: 20px;
-}
-
-.odkazy a:hover {
-	background: #F9BE3C;
-	color: #000037;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.upravy-novinka{
-	margin: 0px;
-}
-
-.upravy-novinka a{
-	margin: 10px 10px 0px 10px;
-	color: black;
-}
-
-.upravy-novinka a:hover{
-	color: black;
-	text-decoration: underline
-}
-  
-.datum{
-	position: relative;
-	top: 0px; left: 330px;
-	margin: 0px;
-}	
-    
-.obsah{
+#obsah{
 	float: right;
 	width: 710px;
 	padding: 10px 10px 20px 10px;
@@ -204,38 +127,48 @@ h4 {
 	border-radius: 10px;
 	font-size: 14px;
 }
- 
-.obsah a{
+
+#obsah a{
 }
 
-.obsah p{
+#obsah p{
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
-.obsah a:hover    { 
+#obsah a:hover    { 
 	text-decoration: underline;
 }
 	
-.obsah img {
+#obsah img {
 	border: 10px solid white;
 	margin: 20px 10px 20px 10px;
 	}
 
-.obsah td img {
+#obsah td img {
 	border-width: 0px;
 	margin: 0px;
 	}
 
-.obsah li { 
+#obsah li { 
 	margin: 5px;
 	margin-right: 20px;
 	}	
 
-.obsah td {
+#obsah td {
 	border-width: 1px;
 	border-color: #000000;
 	border-style: solid
+}
+
+/*
+=========================
+----------TŘÍDY----------
+=========================
+*/
+
+.tlacitko_spravy {
+	color: #008B45;
 }
 
 .error, .succes {
@@ -293,67 +226,10 @@ h4 {
 	font-weight: bold;
 }
 
-.specialni_informace_index{
-	width: 202px;
-	padding: 10px;
-	margin: 10px;
-	border: 1px solid black;
-	text-align: center;
-}
+.sprava{
+	color: #008B45;
+ }
 
-.specialni_informace_index p{
-	margin: 10px 0 0px 0;
-}
-
-.specialni_informace_index-nadpis{
-	font-size: 30px;
-	font-weight: bold;
-}
-
-/*
-+++++++++++++++++++++++++++
-----------NOVINKY----------
-+++++++++++++++++++++++++++
-*/
-
-#archiv_novinek{
-	font: bold 15px Arial; 
-	text-align: center
-}	
-
-.novinky {
-	float: left;
-	width: 483px;
-	margin: 15px 0 10px 0px;
-	background: #F9BE3C;
-	border-radius: 10px;
-}
-
-.novinka a {
-	color: #00299C; /*#26316C referenční barva, taková je barvy pozadí stránek */
-}
-
-.novinky a:hover { 
-}
-	
-.novinky img {
-	width: 200px;
-}
-
-.novinka{
-	background: white;
-	padding: 10px 15px 15px 15px;
-	margin: 0px 5px 20px 5px;
-	border-radius: 5px;
-	border: 1px solid black;
-}
-
-.nadpis-novinka{
-	font-weight: bold;
-	font-size: 25px;
-	position: relative;
-	top:-0px;
-}
 
 /*
 +++++++++++++++++++++++++++

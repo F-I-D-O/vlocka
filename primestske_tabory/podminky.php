@@ -2,20 +2,12 @@
 
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="Content-Style-Type" content="text/css">
-	<meta http-equiv="Content-Language" content="cs">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta name="geo.country" content="CZ">
-	<meta name="keywords" content="skauti Plzeň,skauting Plzen,Vločka Plzeň,skauti předškoláci,skautský oddíl Plzeň">
-	<meta name="Rating" content="General">
-	<meta name="googlebot" content="snippet,archive">
-	<meta name="description" content="28. oddíl Vločka - Příměstské tábory - podminky">
-	<link href="../style.css" rel="stylesheet" type="text/css">
+	<?php set_include_path($_SERVER["DOCUMENT_ROOT"]);
+	require 'php-vzhled/meta.php' ?>
+	<title>28. oddíl Vločka - Příměstské tábory - podmínky účasti</title>
+	
+	<!-- link na ikonu pro facebook -->
 	<link rel="image_src" href="http://vlocka.skauting.cz/images/ikonyweb/logo3.png">
-	<link href="http://vlocka.skauting.cz/images/ikonyweb/logo-mini3.ico" rel="Shortcut Icon">
-	<title>28. oddíl Vločka Plzeň</title>
 </head>
 
 <body>
@@ -36,11 +28,11 @@
     			pro vrácení peněz. (storno podmínky)</p>           	
                	<h2>Podmínky vrácení peněz</h2>
 	               	<ul>
-	               		<li>při odhlášení do 30. 6. 2012 je vrácena plná výše platby, tedy 1200 Kč.</li>
-	               		<li>při Odhlášení do 15. 7. 2012 je vráceno 600 Kč.</li>
-	               		<li>při	Odhlášení do 31. 7. 2012 bude rodičům vráceno 300 Kč, v případě nemoci dítěte 600 Kč 
+	               		<li>při odhlášení do 30. 6. 2013 je vrácena plná výše platby, tedy 1300 Kč.</li>
+	               		<li>při Odhlášení do 15. 7. 2013 je vráceno 600 Kč.</li>
+	               		<li>při	Odhlášení do 31. 7. 2013 bude rodičům vráceno 300 Kč, v případě nemoci dítěte 600 Kč 
 	               			(nutno doložit lékařským potvrzením).</li>
-	               		<li>při odhlášení po 31. 7. 2012 do prvního dne tábora bude rodičům vráceno 600 Kč a to pouze v 
+	               		<li>při odhlášení po 31. 7. 2013 do prvního dne tábora bude rodičům vráceno 600 Kč a to pouze v 
 	               			případě nemoci dítěte (nutno doložit lékařským potvrzením).</li>
 	               		<li>v případě odhlášení dítěte během tábora nebude vracena žádná částka a to ani v případě nemoci.</li>
 	               		<li>v případě, že by se dítě dále nemohlo účastnit tábora z důvodu úrazu vzniklého na táboře, bude 
@@ -55,6 +47,10 @@
 	               		<li>Dítě hlásí všechny zdravotní problémy.</li>
 	               		<li>Dítě musí poslouchat pokyny vedoucího.</li>
 	               	</ol>
+               	<br />	
+        		<p class="velke"><a target="_blank" href="http://vlocka-tabory.kambo.us/">Přihlašování na tábory</a> - 
+        			přihlašuje se on-line!</p>
+        		<p><u>Přihlášky vyplňte nejpozději do 31.5.2013</u></p>
  		</div>
     	<?php require 'primestske_tabory//spodek.php'?>			
 	</div>

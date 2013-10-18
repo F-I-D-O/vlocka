@@ -30,15 +30,9 @@
 		?>
 		
 		<div class="obsah">	
-			 <h1>Bodování vlčat a světlušek</h1>
-			 <p><a target="_blank" href="bodovani%20V+S/rijen2011.html">Bodování a docházka říjen</a></p>
-			 <p><a target="_blank" href="bodovani%20V+S/listopad2011.html">Bodování a docházka listopad</a></p>
-			 <p><a target="_blank" href="bodovani%20V+S/prosinec2011.html">Bodování a docházka prosinec</a></p>
-			 <p><a target="_blank" href="bodovani%20V+S/leden2012.html">Bodování a docházka leden</a></p>
-			 <p><a target="_blank" href="bodovani%20V+S/unor2012.html">Bodování a docházka únor</a> NOVÉ</p>
-			 <p><a target="_blank" href="bodovani%20V+S/brezen2012.html">Bodování a docházka březen</a> NOVÉ</p>
-			 <p><a target="_blank" href="bodovani%20V+S/duben2012.html">Bodování a docházka duben</a> NOVÉ</p>
-			 <p><a target="_blank" href="bodovani%20V+S/fazole.html">Sběr fazolí za celý skautský rok</a> NOVÉ</p>
+			<h1>Bodování vlčat a světlušek</h1>
+			<p><a target="_blank" href="https://docs.google.com/spreadsheet/ccc?key=0AhfGC_oWjoD6dFRzclkyWmZTRkE1YTlhNFdmam5Ydmc">Přehled bodování vlčat a světlušek</a></p>
+			<p><a target="_blank" href="https://docs.google.com/spreadsheet/ccc?key=0AhfGC_oWjoD6dGNmN2VVYWJCdG0wQV9oZUhHNmtWaGc">Přehled bodování předškoláků</a></p>
 		</div>
 		<?php require 'php-vzhled/spodek.php'?>			
 	</div>

@@ -2,11 +2,9 @@
 
 <html lang="cs-cz" dir="ltr">
 <head>
-	<?php require 'php-vzhled/meta.php' ?>
-	<title>8. oddíl Vločka - Příměstské tábory - hlavní strana</title>
-	<meta name="description" content="Jsme oddíl světlušek, vlčat, skautů, skautek a R&amp;R, 
-		dohromady je nás okolo 100 VLOČEK - jsme taková malá lavina a klubovnu máme u 
-		Seneckého rybníka (Plzeň - Bolevec). Oslavili jsme dvanácté narozeniny...">
+	<?php set_include_path($_SERVER["DOCUMENT_ROOT"]);
+	require 'php-vzhled/meta.php' ?>
+	<title>28. oddíl Vločka - Příměstské tábory - hlavní strana</title>
 	
 	<!-- link na ikonu pro facebook -->
 	<link rel="image_src" href="http://vlocka.skauting.cz/images/ikonyweb/logo3.png">
@@ -15,7 +13,6 @@
 <body>
 	<div id="hlavni">
 		<?php
-		set_include_path($_SERVER["DOCUMENT_ROOT"]);
 		require 'php/databaze.php';
 		require 'php-vzhled/zahlavi-default.php';
 		require 'php-vzhled/horejsek.php';
@@ -25,9 +22,9 @@
 		?>
 		
 		<div class="obsah">		
-    				<img src="primestsky2012.png" alt="foto" width="670">	 				 
+    		<img src="../Obrazky/plakaty/primestskytabor2013.png" alt="foto" width="670"> 				 
     	</div>
-		<?php require 'primestske_tabory//spodek.php'?>			
+		<?php require 'primestske_tabory/spodek.php'?>			
 	</div>
 </body>
 </html>

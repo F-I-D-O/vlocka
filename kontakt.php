@@ -31,12 +31,12 @@
 		
 		<div class="obsah">
 			<h1>Kontakty na oddíl</h1>
-			<p style="position: relative; top: -45px; left: 500px;">Aktualizováno 11. října 2012</p>		
+			<p style="position: relative; top: -45px; left: 500px;">Aktualizováno 11. září 2013</p>		
 			<div class="p2">
 	 			<h2>Vedoucí oddílu:</h2>
-				<p><b>David Fiedler</b></p>
-				<p>tel.:737 472 531 </p>
-				<p>mail:david.fido.fiedler@gmail.com</p>
+				<p><b>Šárka Sedláčková</b></p>
+				<p>tel.:605 472 772 </p>
+				<p>mail: vlocka.info@gmail.com</p>
 
 				<p>Pokud nemůže vaše dítě jít na schůzku nebo výpravu, je nutné jej alespoň tři dny předem omluvit 
 				(v případě náhlé nemoci alespoň v den začátku akce) na níže uvedené kontakty. Usnadníte nám tím přípravu 
@@ -53,7 +53,7 @@
 				
 				<h3>Omluvy ze schůzek:</h3>
 				<p><b>fialová šestka světlušek (pondělí): Kateřina Roubová - Medúza</b>, mobil: 728 338 915</p>
-				<p><b>modrá šestka světlušek (středa): Lenka Čejková - Yetti</b>,  mobil: 608 254 638</p>
+				<p><b>modrá šestka světlušek (středa): Linda Vlčková - Rosnička</b>,  mobil: 722 288 473</p>
 				<p><b>červená šestka světlušek (středa): Karolína Vlčková - Píšťa</b>,  mobil: 774 042 535</p>
 				
 				<p><b>černá šestka vlčat (středa): Zdeněk Chval</b>, mobil: 739 429 970</p>
@@ -65,9 +65,9 @@
 				<p><b>oranžová šestka vlčat (čtvrtek): Pavlína Trejbalová - Pyjavice</b>, mobil: 775 279 081</p>
 				
 				<h4>Skauti a skautky se omlovají svým rádcům</h4>
-				<p><b>Rybičky - Linda Vlčková - Rosnička</b>, mobil: 722 288 473</p>
-				<p><b>Káňata - Michal Straka - Drak</b>, mobil: 773 608 499</p>
-				<p><b>Lišáci - Zdeněk Hlavsa - Šíp</b>, mobil: 606 273 274</p>
+				<p><b>Rybičky - Bára Kobesová</b>, mobil: 602 659 034</p>
+				<p><b>Káňata - Tomáš Hrubý - Lachtan</b>, mobil: 775 530 036</p>
+				<p><b>Lišáci - Michal Straka - Drak</b>, mobil: 773 608 499</p>
 			</div>
 		</div>
 		<?php require 'php-vzhled/spodek.php'?>			

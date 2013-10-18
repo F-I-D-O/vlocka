@@ -11,7 +11,15 @@
 	<h2>Příměstské tábory</h2>
 		<ul>
 			<li>
-				<a href='<?php echo('http://' . $_SERVER["SERVER_NAME"] . '/primestske_tabory/mista.php') ?>'>
+				<a href='<?php echo('http://' . $_SERVER["SERVER_NAME"] . '/primestske_tabory/index.php') ?>'>
+				DOMŮ / PLAKÁT</a>
+			</li>
+			<li>
+				<a href='<?php echo('http://' . $_SERVER["SERVER_NAME"] . '/primestske_tabory/prihlaska_a_kontakt.php') ?>'>
+				PŘIHLÁŠKA A KONTAKT</a>
+			</li>
+			<li>
+				<a href='<?php echo('http://' . $_SERVER["SERVER_NAME"] . '/primestske_tabory/volna_mista.php') ?>'>
 				POČET VOLNÝCH MÍST</a>
 			</li>
 			<li>
@@ -31,16 +39,12 @@
 				MAPA</a>
 			</li>
 			<li>
-				<a href='<?php echo('http://' . $_SERVER["SERVER_NAME"] . '/primestske_tabory/kontakt.php') ?>'>
-				PŘIHLÁŠKA A KONTAKT</a>
-			</li>
-			<li>
 				<a target="_blank" href='<?php echo('http://' . $_SERVER["SERVER_NAME"] . '/prijimame_cleny.php') ?>'>
-				PŘÍJÍMÁME NOVÉ ČLENY</a>
+				PŘÍJÍMÁME NOVÉ ČLENY DO ODDÍLU</a>
 			</li>
 			<li>
 				<a href='<?php echo('http://' . $_SERVER["SERVER_NAME"] . '/primestske_tabory/fotokronika.php') ?>'>
-				FOTOKRONIKA</a>
+				FOTKY Z PŘÍMĚSTSKÝCH TÁBORŮ</a>
 			</li>
 		</ul>
 	</div>				

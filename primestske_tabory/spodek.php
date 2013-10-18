@@ -15,7 +15,7 @@
 	<img align="right" src="http://vlocka.skauting.cz/obrazky/ikony/valid-html401.gif" alt="HTML 4.01 Valid">
 	<div id="placka" style="background-color: transparent;
   							position: absolute;
-							top: 350px; left: -100px;">
+							top: 750px; left: -80px;">
 			<a href="http://www.skaut.cz"><img src="http://vlocka.skauting.cz/obrazky/placka5.png" alt="www.skaut.cz"></a>
   	</div>
 </div>

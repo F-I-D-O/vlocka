@@ -1,9 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 
 <html>
 <head>
 	<?php require 'php-vzhled/meta.php' ?>
-	<link 	href="akce/akce.css?<?php echo (urlencode(strftime("%m/%d/%Y %H:%M:%S", filemtime("style.css"))))?>" 
+	<link 	href="akce/akce.css?<?php echo (urlencode(strftime("%m/%d/%Y %H:%M:%S", filemtime("akce.css"))))?>"        
 			rel="stylesheet" 
 			type="text/css">
 	<meta name="title" content="28. oddíl Vločka - Akce">
@@ -17,7 +17,7 @@
 		/* Programové závislosti */
 		require 'php-konstanty/mesice.php';
 		require 'php-konstanty/kategorie.php';
-		require 'php/databaze.php';
+		require 'php/databaze.php';
 		/* Načítání dat o akci z databáze */
 		$databaze = new databaze();
 		
@@ -190,7 +190,7 @@
 		<?php require 'php-vzhled/spodek.php'?>
 		<br>			
 	</div>
-	<script type="text/javascript" src="script/funkce.js"></script>
+	<script type="text/javascript" src="Script/funkce.js"></script>
 	<script type="text/javascript" src="akce/akce.js"></script>
 </body>
 </html>

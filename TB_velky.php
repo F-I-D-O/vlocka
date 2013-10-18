@@ -31,7 +31,7 @@
 		
 		<div class="obsah">
 			<h1>Táborové body skautů a skautek</h1>
-				<p style="position: relative; top: -45px; left: 480px;">Aktualizováno 12. listopadu 2012</p>
+				<p style="position: relative; top: -45px; left: 480px;">Aktualizováno 13. května 2013</p>
 				<p>Letos budou skauti a skautky opět plnit táborové body. Co to pro ně 
 				znamená? Každý skaut nebo skautka, který/á chce jet na tábor, musí splnit k <u>30. 4. 2013</u> táborové 
 				body(TB). Počet táborových bodů nutných pro účast na táboře byl letos stanoven na <u>35</u>. Kolik má kdo 
@@ -40,13 +40,15 @@
 				<p><u>Nejlepší skauty a skautky čeká výprava za odměnu.</u> 
 				(hranice na účast na výpravě byla zatím stanovena na <u>40 TB</u>)</p>
 				<br />
+				
 				<p style="margin-bottom: 0px">
 				 	<a style="font-size: 25px" target="_blank" href="https://docs.google.com/spreadsheet/ccc?key=0Ajsq8mA--lZSdFRVSnJYRTRvRzZ2bDhwNm9GNndhMWc">
 				 	Podrobný rozpis táborových bodů</a>
-				 </p>
-				 <p>(pokud najdete chyby, ozvěte se Fidovi)</p>
+				</p>
+				<p>Informace v tabulce za tímto odkazem jsou aktualizovány průběžně, jsou tedy čerstvější než ty níže uvedené!
+					(datum poslední aktualizace této stránky je uveden vpravo nahoře). Pokud najdete chyby, ozvěte se Fidovi)</p>
 				<br />
-				<h2>Získané táborové body (do konce října 2012)</h2>
+				<h2>Získané táborové body (do konce roku 2012)</h2>
 					<h3>Vysvětlivky:</h3>
 				 	<div class="TB">
 					 	<div class="TB3">
@@ -62,36 +64,33 @@
 				 	<div class="TB2">
 						<h3>Lišáci</h3>
 							<table>								 					
-			 					<tr ><td>Hobit</td><td>11</td></tr>
-			 					<tr ><td>Plamínek</td><td>17</td></tr>
-								<tr ><td>Mrazík</td><td>11</td></tr>
-								<tr ><td>Piškot</td><td>9</td></tr>
+			 					<tr ><td>Plamínek</td><td>33</td></tr>
+								<tr bgcolor="gold"><td>Mrazík</td><td>42</td></tr>
+								<tr bgcolor="white"><td>Piškot</td><td>37</td></tr>
 						 	</table>
 					</div>			 
 					<div class="TB2">
 						<h3>Káňata</h3>
 						 	<table>
-  					 		 	<tr ><td>Gandalf</td><td>16</td></tr>
-								<tr ><td>Drak</td><td>16</td></tr>
-						 		<tr ><td>Skřet</td><td>12</td></tr>
-								<tr ><td>Lachtan</td><td>14</td></tr>
-								<tr ><td>Kudla</td><td>10</td></tr>
-								<tr ><td>MC</td><td>14</td></tr>
-								<tr ><td>Brzda</td><td>11</td></tr>
+  					 		 	<tr bgcolor="gold"><td>Gandalf</td><td>56</td></tr>
+								<tr bgcolor="gold"><td>Drak</td><td>62</td></tr>
+						 		<tr bgcolor="gold"><td>Skřet</td><td>50</td></tr>
+								<tr bgcolor="gold"><td>Lachtan</td><td>40</td></tr>
+								<tr ><td>Kudla</td><td>33</td></tr>
+								<tr bgcolor="gold"><td>MC</td><td>44</td></tr>
+								<tr bgcolor="red"><td>Brzda</td><td>27</td></tr>
 						 	</table>
 					</div> 
 					<div class="TB2">
 						<h3>Rybičky</h3>
 						 	<table>
-		 		 		 	  	<tr ><td>Rosnička</td><td>15</td></tr>
-				 				<tr ><td>Zvonek</td><td>14</td></tr>
-				 				<tr ><td>Bára</td><td>11</td></tr>
-				 				<tr ><td>Aneta</td><td>10</td></tr>												
-				 				<tr ><td>Manťák</td><td>20</td></tr>
-				 				<tr ><td>Želva</td><td>11</td></tr>
-								<tr ><td>Princezna</td><td>5</td></tr>
-								<tr ><td>Lucka</td><td>6</td></tr>
-								<tr ><td>Šimpy</td><td>4</td></tr>
+		 		 		 	  	<tr bgcolor="gold"><td>Rosnička</td><td>49</td></tr>
+				 				<tr ><td>Zvonek</td><td>32</td></tr>
+				 				<tr bgcolor="white"><td>Bára</td><td>39</td></tr>
+				 				<tr bgcolor="gold"><td>Aneta</td><td>42</td></tr>												
+				 				<tr bgcolor="gold"><td>Manťák</td><td>64</td></tr>
+				 				<tr bgcolor="white"><td>Želva</td><td>35</td></tr>
+								<tr ><td>Princezna</td><td>32</td></tr>
 								<tr ><td>Eliška</td><td>4</td></tr>
 							</table>
 					</div>

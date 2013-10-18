@@ -90,7 +90,8 @@
 					 	<li>hygienické potřeby</li>
 					 	<li>baterka</li>
 					 	<li>šátek (další k tomu oddílovému)</li>
-					 	<li><b>jezdíme v oddílovém tričku se šátkem</b></li>
+					 	<li><b>jezdíme v oddílovém tričku se šátkem (na velké akce - Podzimky, Vánoce a Velikonoce se 
+					 		jezdí v kroji, tričko se šátkem je ale nutné zabalit do batohu!)</b></li>
 					</ul>
 					<p><b>Na všechny akce je třeba se navíc dovybavit podle informací v lístečku k výpravě/na internetu!</b></p>	 
 					<p><b>Vybavení na výpravu se balí zásadně do jednoho zavazadla, a to vždy batohu!</b>

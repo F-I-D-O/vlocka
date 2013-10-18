@@ -2,20 +2,12 @@
 
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="Content-Style-Type" content="text/css">
-	<meta http-equiv="Content-Language" content="cs">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta name="geo.country" content="CZ">
-	<meta name="keywords" content="skauti Plzeň,skauting Plzen,Vločka Plzeň,skauti předškoláci,skautský oddíl Plzeň">
-	<meta name="Rating" content="General">
-	<meta name="googlebot" content="snippet,archive">
-	<meta name="description" content="28. oddíl Vločka - Příměstské tábory - Co s sebou">
-	<link href="../style.css" rel="stylesheet" type="text/css">
+	<?php set_include_path($_SERVER["DOCUMENT_ROOT"]);
+	require 'php-vzhled/meta.php' ?>
+	<title>28. oddíl Vločka - Příměstské tábory - co s sebou</title>
+	
+	<!-- link na ikonu pro facebook -->
 	<link rel="image_src" href="http://vlocka.skauting.cz/images/ikonyweb/logo3.png">
-	<link href="http://vlocka.skauting.cz/images/ikonyweb/logo-mini3.ico" rel="Shortcut Icon">
-	<title>28. oddíl Vločka Plzeň</title>
 </head>
 
 <body>
@@ -51,6 +43,10 @@
 				 	<li>dřívější vyzvednutí dítěte z tábora je možné po předchozí domluvě</li>
 					<li>užívá-li dítě pravidělně léky, předejte je vedoucím</li>
 				</ul>
+				<br />	
+        		<p class="velke"><a target="_blank" href="http://vlocka-tabory.kambo.us/">Přihlašování na tábory</a> - 
+        			přihlašuje se on-line!</p>
+        		<p><u>Přihlášky vyplňte nejpozději do 31.5.2013</u></p>
 		</div>
 		<?php require 'primestske_tabory//spodek.php'?>			
 	</div>

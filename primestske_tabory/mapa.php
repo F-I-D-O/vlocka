@@ -2,20 +2,12 @@
 
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="Content-Style-Type" content="text/css">
-	<meta http-equiv="Content-Language" content="cs">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta name="geo.country" content="CZ">
-	<meta name="keywords" content="skauti Plzeň,skauting Plzen,Vločka Plzeň,skauti předškoláci,skautský oddíl Plzeň">
-	<meta name="Rating" content="General">
-	<meta name="googlebot" content="snippet,archive">
-	<meta name="description" content="28. oddíl Vločka - Příměstské tábory - mapa">
-	<link href="../style.css" rel="stylesheet" type="text/css">
+	<?php set_include_path($_SERVER["DOCUMENT_ROOT"]);
+	require 'php-vzhled/meta.php' ?>
+	<title>28. oddíl Vločka - Příměstské tábory - mapa</title>
+	
+	<!-- link na ikonu pro facebook -->
 	<link rel="image_src" href="http://vlocka.skauting.cz/images/ikonyweb/logo3.png">
-	<link href="http://vlocka.skauting.cz/images/ikonyweb/logo-mini3.ico" rel="Shortcut Icon">
-	<title>28. oddíl Vločka Plzeň</title>
 </head>
 
 <body>
@@ -31,12 +23,17 @@
 		?>
 		
 		<div class="obsah">		
-	 		<h1>Příměstské tábory 2012 - Mapa</h1>
-	 			<img src="mapa_klubovna.JPG" alt="" border="0" width="630"/>
-	 			<a href="http://www.mapy.cz/#x=130700224@y=134911488@z=15@mm=FP@ax=130700224@ay=134911488@at=Skautk%C3%A9%20klubovny%20%22Sene%C4%8D%C3%A1k%22@ad=Skautk%C3%A9%20klubovny%20%22Sene%C4%8D%C3%A1k%22@sa=s@st=s@ssq=seneck%C3%BD%20rybn%C3%ADk%20skauti" target="_blank">
-	 			Klubovna na mapách cz</a>
+	 		<h1>Příměstské tábory 2013 - Mapa</h1>
+	 			<img src="../Obrazky/mapa_klubovna.JPG" alt="" border="0" width="670"/>
+	 			<p>
+		 			<a href="http://www.mapy.cz/#z=19&c=h&umc=9eE6fxWLLn&uml=Skautk%C3%A9%20klubovny%20%22Sene%C4%8D%C3%A1k%22%20%E2%80%93%20Skautk%C3%A9%20klubovny%20%22Sene%C4%8D%C3%A1k%22&q=seneck%25C3%25BD%2520rybn%25C3%25ADk%2520skauti&x=13.393757&y=49.785098&p=-1" target="_blank">
+		 			letecký snímek klubovny</a>
+	 			</p>
+	 		<p class="velke"><a target="_blank" href="http://vlocka-tabory.kambo.us/">Přihlašování na tábory</a> - 
+        			přihlašuje se on-line!</p>
+        	<p><u>Přihlášky vyplňte nejpozději do 31.5.2013</u></p>
 		</div>
-		<?php require 'primestske_tabory//spodek.php'?>			
+		<?php require 'primestske_tabory/spodek.php'?>			
 	</div>
 </body>
 </html>

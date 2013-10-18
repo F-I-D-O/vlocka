@@ -1,0 +1,235 @@
+/* 
+    Document   : sablona
+    Created on : 24.9.2013, 15:50:57
+    Author     : Fido
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+=========================
+-----IDENTIFIKÁTORY------
+=========================
+*/
+
+#hlavni {
+	margin: auto;
+	padding-bottom: 3px;
+	position: relative;
+	width: 1000px;
+	background-color: #26316C;
+	border-radius: 20px;
+}
+
+#horejsek {
+	background-color: #26316C;
+	width: 100%; 
+	height: 270px; 
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+#zahlavi {
+	float: left;
+	height: 265px; 
+	width: 266px;
+}
+
+#zahlavi img {
+	width: 245px;
+	margin: 10px
+}
+
+#hlavicka {
+	width: 734px; 
+	height: 142px; 
+	background-color: #26316C;
+	border-top-right-radius: 20px; 
+	margin: 0 0 0px 0;
+	float: right;
+}
+
+#hlavicka img {
+	margin: 15px 0px 0px 70px;
+}
+
+/* horní menu */
+#menu {
+	float: left;
+	width: 480px;
+	height: 30px;
+	padding: 0px 0 0px 0px;
+	margin: 0px 4px 4px 0;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid white;
+}
+
+#menu a {
+	display: inline-block;
+	float: left;
+	color: #F9BE3C;
+	background-color: #000037;
+	padding: 8px 0px 0 0px;
+	height: 22px;
+}
+
+#menu a:hover {
+  	color: #000037;
+  	background-color: #F9BE3C;
+  	text-decoration: none;
+}
+
+#odkaz_domu {
+	width: 62px; 
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+#odkaz_prijimame_cleny {
+	width: 82px; 
+}
+
+#odkaz_o_nas {
+	width: 62px; 
+}
+
+#odkaz_skauting {
+	width: 82px; 
+}
+
+#odkaz_kontakt {
+	width: 82px; 
+}
+
+#odkaz_fotokronika {
+	width: 110px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+/* horní menu  - konec*/
+
+#uvod {
+	float: left;
+	width: 470px;
+	height: 81px;
+	padding: 0 5px 5px 5px;
+	margin: 0 0px 0px 0px;
+	background: #F9BE3C;
+	font-size: 13px;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#nadpis_uvodu {
+	font: bold 16px Comic Sans MS; 
+	margin: 0;
+}
+
+#text_uvodu {
+	margin: 0;
+}
+
+#vlevo {
+	float: left;
+	clear: both;
+	width: 265px; 
+	color: #251200;
+	padding: 0 0 0 0;
+	margin: 0px 0 0 0;
+	background: #26316C;
+}
+
+#odkazy_spravy a {
+	background: #006B45;
+}
+
+#spodek {
+	clear: both;
+	width: 950px;
+	height: 50px;
+	margin: 5px;
+	padding: 20px;
+	background: #FF8800;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px
+}
+
+#toplist_logo {
+	width: 0;
+}
+
+#toplist_pocitadlo {
+	width: 88px;
+	height: 60px; 
+}
+
+#valid_html {
+	float: right;
+}
+
+#placka {
+	background-color: transparent;
+	position: absolute;
+	top: 380px; 
+	left: -40px;
+}
+
+#placka img {
+	width: 150px;
+}
+
+/*
+=========================
+----------TŘÍDY----------
+=========================
+*/
+
+.nadpis_leve_menu {
+	padding: 10px 0px 0px 10px;
+	text-align: left;
+	font-size: 25px;
+}
+
+.odkazy {
+	width: 255px;
+	background-color: #FF8800;
+	border-radius: 10px;
+	padding: 0 0 10px 0;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px 10px 5px 5px;
+}
+
+.odkazy ul {
+	margin: 0 0 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.odkazy li {
+  margin: 0px 0 0.2em 10px;
+}
+
+.odkazy a {
+	display: block;
+	width: 225px;
+	padding: 0.7em 0.8em 0.7em 0.0em;
+	text-align: right;
+	color: #F9BE3C;
+	background: #000037;
+	margin: 0;
+	border-radius: 20px;
+}
+
+.odkazy a:hover, #odkazy_spravy a:hover {
+	background: #F9BE3C;
+	color: #000037;
+	font-weight: bold;
+	text-decoration: none;
+}

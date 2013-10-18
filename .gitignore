@@ -1,6 +1,22 @@
 *.class
 *.pyc
 *.pyo
-Archiv
-Archiv
-secure
+*.db
+
+**archiv/
+**Archiv/
+**nepouzite/
+**nepoužité/
+**podklady/
+**/Velké/
+
+/bodovani V+S
+/dokumenty
+/fotky
+/kronika
+/nbproject/private/
+/Script/ckeditor/
+/secure
+/TB skauti
+
+

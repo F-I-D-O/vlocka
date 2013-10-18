@@ -1,0 +1,76 @@
+
+/*
+=========================
+-----IDENTIFIKÁTORY------
+=========================
+*/
+
+#novinky {
+	float: left;
+	width: 463px;
+	margin: 0px 0 10px 0px;
+	padding: 10px;
+	background: #F9BE3C;
+	border-radius: 10px;
+}
+
+#novinky_nadpis {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#archiv_novinek{
+	font: bold 15px Arial; 
+	text-align: center
+}	
+
+/*
+=========================
+----------TŘÍDY----------
+=========================
+*/
+
+.novinka{
+	background: white;
+	padding: 10px 15px 15px 15px;
+	margin: 0px 0px 10px 0px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.novinka a {
+	color: #00299C; /*#26316C referenční barva, taková je barvy pozadí stránek */
+}
+
+.novinky a:hover { 
+}
+	
+.novinky img {
+	width: 200px;
+}
+
+.nadpis-novinka{
+	font-weight: bold;
+	font-size: 25px;
+	position: relative;
+	top:-0px;
+}
+
+.upravy-novinka{
+	margin: 0px;
+}
+
+.upravy-novinka a{
+	margin: 10px 10px 0px 10px;
+	color: #008B45;
+}
+
+.upravy-novinka a:hover{
+	text-decoration: underline
+}
+  
+.datum{
+	position: relative;
+	top: 0px; left: 330px;
+	margin: 0px;
+}

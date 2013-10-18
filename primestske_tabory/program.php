@@ -2,20 +2,12 @@
 
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="Content-Style-Type" content="text/css">
-	<meta http-equiv="Content-Language" content="cs">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta name="geo.country" content="CZ">
-	<meta name="keywords" content="skauti Plzeň,skauting Plzen,Vločka Plzeň,skauti předškoláci,skautský oddíl Plzeň">
-	<meta name="Rating" content="General">
-	<meta name="googlebot" content="snippet,archive">
-	<meta name="description" content="28. oddíl Vločka - Příměstské tábory - program">
-	<link href="../style.css" rel="stylesheet" type="text/css">
+	<?php set_include_path($_SERVER["DOCUMENT_ROOT"]);
+	require 'php-vzhled/meta.php' ?>
+	<title>28. oddíl Vločka - Příměstské tábory - informace a program</title>
+	
+	<!-- link na ikonu pro facebook -->
 	<link rel="image_src" href="http://vlocka.skauting.cz/images/ikonyweb/logo3.png">
-	<link href="http://vlocka.skauting.cz/images/ikonyweb/logo-mini3.ico" rel="Shortcut Icon">
-	<title>28. oddíl Vločka Plzeň</title>
 </head>
 
 <body>
@@ -31,11 +23,11 @@
 		?>
 		
 		<div class="obsah">		
-			<h1>Příměstské tábory 2012 - Program</h1>
+			<h1>Příměstské tábory 2013 - Program</h1>
 				<h4>Je připraven bohatý program v okolí skautských kluboven u Seneckého rybníka:</h4>
 					<p>(při nepříznivém počasí uvnitř)</p>
 					<ul>
-						<li>celotáborová hra (téma Harry Potter, Šmoulové a Safari)</li>
+						<li>celotáborová hra (téma Z pohádky do pohádky, Hobit, Asterix a Obelix, Shrek)</li>
 						<li>sportovní hry</li>
 						<li>rukodělky</li>
 						<li>lanové překážky</li>
@@ -51,7 +43,7 @@
 					</ul>
 				<ul class="velky_seznam">
 					<li>program pro děti od 5 do 11 let!</li>
-					<li>cena tábora je 1200 Kč/týden</li>
+					<li>cena tábora je 1300 Kč/týden</li>
 					<li>děti dostanou jedno hlavní jídlo denně a dvě svačiny</li>
 					<li>pití k dispozici po celý den </li>
 					<li>každý den dva srazy: 7.30h a 8.30h na konečné tramvaje č.1 v Bolevci (či po domluvě později 
@@ -59,9 +51,10 @@
 					<li>konec vždy v 17h na konečné tramvaje č.1 v Bolevci (po domluvě možnost vyzvednutí 
 						dítěte dříve u kluboven u Seneckého rybníka)</li>
 				</ul>	
-			 	<p>V případě zájmu si stáhněte <a href="Prihlaska_tabor.doc">přihlášku</a> a vyplněnou ji pošlete na adresu 
-			 	plzentabor@gmail.com Do 14 dnů po odeslání přihlášky je třeba poslat peníze na účet či přinést osobně. S 
-			 	přihláškami neotálejte, máme omezený počet míst!</p>
+			 	<br />	
+        		<p class="velke"><a target="_blank" href="http://vlocka-tabory.kambo.us/">Přihlašování na tábory</a> - 
+        			přihlašuje se on-line!</p>
+        		<p><u>Přihlášky vyplňte nejpozději do 31.5.2013</u></p>
 		</div>
 		<?php require 'primestske_tabory//spodek.php'?>			
 	</div>

@@ -31,12 +31,26 @@
 		
 		<div class="obsah">		
 	 		<h1>Dokumenty ke stažení</h1>
+	 			<p><a href="dokumenty/info_tabor_podrobne.pdf">Další informace o táboře 2013</a></p>
+	 			<p>Přihláška na tábor 2013 &nbsp;<a href="dokumenty/Prihlaska_na_tabor.docx">DOC</a> 
+	 				&nbsp; <a target="_blank" href="dokumenty/Prihlaska_na_tabor.pdf">PDF</a></p>
+	 			<p><a target="_blank" href="dokumenty/info_tabor2013.pdf">
+			 		Informace o táboře 2013
+			 	</a></p>
 				<p>Přihláška do oddílu &nbsp;<a href="dokumenty/Prihlaska_do_oddilu.doc">DOC</a> &nbsp;
 					<a target="_blank" href="dokumenty/Prihlaska_do_oddilu.pdf">PDF</a></p>
-			 	<p><a target="_blank" href="dokumenty/info_pro_novacky.pdf">Informace pro rodiče 2011 - 2012</a></p>	
-			 	<p><a href="dokumenty/vyslekdy-SZ-2011-kraj.xls">Podrobné Výsledky Svojsíkova závodu 2011</a> (xls)</p>
-			 	<p><a href="dokumenty/vyslekdy-SZ-2011-okres.xls">Výsledky okresního kola Svojsíkova závodu 2011</a> (xls)</p>
-			 	<p><a target="_blank" href="dokumenty/Vyrocni_zprava_2010.pdf">Výroční zpráva za druhou půlku roku 2010</a></p>						 				
+			 	<p><a target="_blank" href="dokumenty/info_pro_novacky.pdf">
+			 		Informace pro rodiče 2011 - 2012
+			 	</a></p>	
+			 	<p><a href="dokumenty/vyslekdy-SZ-2011-kraj.xls">
+			 		Podrobné Výsledky Svojsíkova závodu 2011</a> (xls)
+			 	</p>
+			 	<p><a href="dokumenty/vyslekdy-SZ-2011-okres.xls">
+			 		Výsledky okresního kola Svojsíkova závodu 2011</a> (xls)
+			 	</p>
+			 	<p><a target="_blank" href="dokumenty/Vyrocni_zprava_2010.pdf">
+			 		Výroční zpráva za druhou půlku roku 2010
+			 	</a></p>						 				
 		</div>
 		<?php require 'php-vzhled/spodek.php'?>			
 	</div>

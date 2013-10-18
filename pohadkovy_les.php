@@ -25,7 +25,7 @@
 		?>
 		
 		<div class="obsah">		
-    				<img src="obrazky/pohadkovyles2012-10001.png" alt="foto" width="670">	 				 
+    				<img src="Obrazky/plakaty/pohadkovyles2013.png" alt="foto" width="670" style="border: 0px; margin: 0px 0 0 20px">	 				 
     	</div>
 		<?php require 'php-vzhled/spodek.php'?>			
 	</div>
