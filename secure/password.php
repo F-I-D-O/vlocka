@@ -1,0 +1,1 @@
+<?php  $mysqluser="root";         		// Uživatelské jméno  $mysqlpasswd="";     				// Heslo  $mysqlhost="localhost";  	 		// MySQL server  $mysqldb="vlocka";      			// Název databáze?>
