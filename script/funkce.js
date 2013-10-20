@@ -1,16 +1,15 @@
 
-function jeValidniUrl(url){
-	
+function jeOdkaz(odkaz){
+	var urlRegExp = /(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})/
+	return urlRegExp.test(odkaz);
 }
 
 function vytvorOdkaz(odkaz, text, novaZalozka){
 	if(novaZalozka === undefined){
 		novaZalozka = (odkaz.hostname !== window.location.hostname);
-		alert('1');
 	}
 	
 	if(novaZalozka === true){
-		alert("<a href='" + odkaz + "' target='_blank'>" + text + "</a>");
 		return "<a href='" + odkaz + "' target='_blank'>" + text + "</a>";
 	}
 	else{

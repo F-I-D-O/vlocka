@@ -8,16 +8,15 @@ window.dialogUrl = {
 	tipy: $(".validateTips"),
 	
 	nastavDialogUrl: function (funkceProZapisOdkazu){
-		dialogObjekt = this;
 		this.dialogDiv.dialog({
 			autoOpen: false,
 			modal: true,
 			buttons: {
 				"Vytvoř odkaz": function() {
-					dialogObjekt.vsechnaPole.removeClass( "ui-state-error" );
+					dialogUrl.vsechnaPole.removeClass( "ui-state-error" );
 
-					if(dialogObjekt.spravneVyplneno()){
-						funkceProZapisOdkazu(vytvorOdkaz(dialogObjekt.urlPole.val(), dialogObjekt.textPole.val()));
+					if(dialogUrl.spravneVyplneno()){
+						funkceProZapisOdkazu(vytvorOdkaz(dialogUrl.urlPole.val(), dialogUrl.textPole.val()));
 						$(this).dialog( "close" );
 					}
 				},
@@ -26,21 +25,27 @@ window.dialogUrl = {
 				}
 			},
 			close: function() {
-				dialogObjekt.vsechnaPole.val( "" ).removeClass( "ui-state-error" );
+				dialogUrl.vsechnaPole.val( "" ).removeClass( "ui-state-error" );
 			}
 		});
+		this.urlPole.on("paste", this.vlozenaUrl);
 	},
 
 	otevriDialogUrl: function (oznacenyText){
 		this.dialogDiv.dialog( "open" );
 		this.textPole.val(oznacenyText);
+		if(jeOdkaz(oznacenyText)){
+			this.urlPole.val(oznacenyText);
+		}
+		else{
+			this.urlPole.val("");
+		}
 	},
 			
 	aktualizujTipy: function (textTipu) {
 		this.tipy.text(textTipu).addClass("ui-state-highlight");
-		dialogObjekt = this;
 		setTimeout(function() {
-			dialogObjekt.tipy.removeClass( "ui-state-highlight", 1500 );
+			dialogUrl.tipy.removeClass( "ui-state-highlight", 1500 );
 		} , 500 );
 	},
 
@@ -67,8 +72,18 @@ window.dialogUrl = {
 
 	jeValidniUrl: function (){
 		return true;
-	}
+	},
 	
+	vlozenaUrl: function(){
+		urlPole = dialogUrl.urlPole;
+		textPole = dialogUrl.textPole;
+		
+		setTimeout(function(){
+			if(jeOdkaz(urlPole.val()) && textPole.val().length < 1){
+				textPole.val(urlPole.val()) ;
+			}
+		}, 100);
+	}
 	
 };
 
