@@ -3,11 +3,22 @@ function jeValidniUrl(url){
 	
 }
 
-function dialogUrl(oznacenyText, funkceProZapisOdkazu){
-	$('#dialog_url').dialog({
-		
-	});
+function vytvorOdkaz(odkaz, text, novaZalozka){
+	if(novaZalozka === undefined){
+		novaZalozka = (odkaz.hostname !== window.location.hostname);
+		alert('1');
+	}
+	
+	if(novaZalozka === true){
+		alert("<a href='" + odkaz + "' target='_blank'>" + text + "</a>");
+		return "<a href='" + odkaz + "' target='_blank'>" + text + "</a>";
+	}
+	else{
+		return "<a href='" + odkaz + "'>" + text + "</a>";
+	}
 }
+
+
 
 
 

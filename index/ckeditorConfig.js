@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 /**
  * nastavení CKEditoru pro vložení nové novinky
  */
@@ -25,17 +27,24 @@ CKEDITOR.editorConfig = function( config ) {
 CKEDITOR.on('instanceReady', function( ev ){
 	var editor = ev.editor;
 //	editor.getCommand('link').disable();
+
+	CKEDITOR.volajici = editor;
+	CKEDITOR.vlozOdkaz = function(odkaz){
+		CKEDITOR.volajici.insertHtml(odkaz);
+	};
+
+	// nastaví dialog url
+	dialogUrl.nastavDialogUrl(CKEDITOR.vlozOdkaz);
+
 	editor.addCommand( 'link', {
 		exec: function( editor ) {
-			
+			//editor.insertHtml('<a href="gdfgdgdfgd">rrrrrrrr</a>');
+			//CKEDITOR.vlozOdkaz();
 			// odkaz na text označený v textarea
 			var oznacenyText = editor.getSelection().getSelectedText().toString();
 			
-			// odkaz na funkci pro umístění HTML
-			var funkceProZapisOdkazu = editor.insertHtml;
-			
 			// zavolá Jquery UI dialog pro vložení odkazu
-			dialogUrl(oznacenyText, funkceProZapisOdkazu);
+			dialogUrl.otevriDialogUrl(oznacenyText);
 		}
 	} );
 });
@@ -167,3 +176,4 @@ CKEDITOR.on('instanceReady', function( ev ){
 //	
 //});
 
+});

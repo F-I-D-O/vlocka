@@ -26,7 +26,7 @@ window.Opravneni = {
 	
 	uroven: parseInt($('meta[name=opravneni]').attr("content")),
 	
-	prover_opravneni: function(sila){
+	proverOpravneni: function(sila){
 		if (uroven < sila){
 			return false;
 		}

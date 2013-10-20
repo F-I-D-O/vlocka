@@ -1,11 +1,11 @@
 
-<div id="dialog_url" title="Create new user">
+<div id="dialog_url" class='dialog' title="Tvorba odkazu">
 	<form>
 		<fieldset>
-		<label for="name">URL</label>
-		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-		<label for="email">Text odkazu</label>
-		<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+			<label for="name">URL</label>
+			<input type="text" name="url" id="url" class="text ui-widget-content ui-corner-all" />
+			<label for="text_odkazu">Text odkazu</label>
+			<input type="text" name="text_odkazu" id="text_odkazu" class="text ui-widget-content ui-corner-all" />
 		</fieldset>
 	</form>
 </div>

@@ -50,7 +50,7 @@ $('#nova_novinka-tlacitko_zpet').click(function () {
 $('#nova_novinka-textarea').ckeditor({
 	customConfig: ADRESAR_STRANKY + ODDELOVAC_ADRESARU + SOUBOR_CKEDITOR_CONFIG
 });
- 
+
 });
 
 

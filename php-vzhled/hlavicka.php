@@ -14,13 +14,14 @@ const SOUBOR_DIALOG_URL = 'dialog_url.php';
 
 //adresáře
 const ADRESAR_SCRIPTU = 'Script';
+const ADRESAR_JQUERY_UI = "jquery-ui-1.10.3.custom";
 const ADRESAR_CKEDITOR = 'ckeditor';
 const ADRESAR_DIALOGU = 'Dialogy';
 const ADRESAR_DIALOGU_URL = 'Dialog_url';	
 
 // cesty k adresářům
 define('CESTA_ADRESAR_SCRIPTU', $_SERVER['DOCUMENT_ROOT'] . ODDELOVAC_ADRESY .  ADRESAR_SCRIPTU);
-define('CESTA_ADRESAR_DIALOGU', $_SERVER['DOCUMENT_ROOT'] . ODDELOVAC_ADRESY .  ADRESAR_DIALOGU);
+define("CESTA_ADRESAR_JQUERY_UI", $_SERVER['DOCUMENT_ROOT'] . ODDELOVAC_ADRESY .  ADRESAR_JQUERY_UI);
 
 // adresa souboru favicony
 define('ADRESA_SOUBOR_FAVICONY', ADRESA_STRANEK . ODDELOVAC_ADRESY . ADRESAR_OBRAZKU . ODDELOVAC_ADRESY .
@@ -30,17 +31,23 @@ define('ADRESA_SOUBOR_FAVICONY', ADRESA_STRANEK . ODDELOVAC_ADRESY . ADRESAR_OBR
 define('CESTA_SOUBOR_META_INDIV', CESTA_ADRESAR_STRANKY . ODDELOVAC_ADRESY . SOUBOR_META);
 
 // cesty ke stylům 
-define('CESTA_GLOBALNI_STYL', $_SERVER['DOCUMENT_ROOT'] . ODDELOVAC_ADRESY . Styl::SOUBOR_STYL);
-define('CESTA_STYL_SABLONY', CESTA_ADRESAR_SABLONY . ODDELOVAC_ADRESY . Styl::SOUBOR_STYL_SABLONY);
+define('CESTA_GLOBALNI_STYL', $_SERVER['DOCUMENT_ROOT'] . ODDELOVAC_ADRESY . Styl::STYL);
+define('CESTA_STYL_SABLONY', CESTA_ADRESAR_SABLONY . ODDELOVAC_ADRESY . Styl::STYL_SABLONY);
 define('CESTA_STYL_PRIHLASOVACIHO_FORMULARE', CESTA_ADRESAR_SABLONY . ODDELOVAC_ADRESY . 
-		ADRESAR_PRIHLASOVACIHO_FORMULARE . ODDELOVAC_ADRESY . Styl::SOUBOR_STYL_PRIHLASOVACIHO_FORMULARE);
+		ADRESAR_PRIHLASOVACIHO_FORMULARE . ODDELOVAC_ADRESY . Styl::STYL_PRIHLASOVACIHO_FORMULARE);
 define('CESTA_INDIV_STYL', CESTA_ADRESAR_STRANKY . ODDELOVAC_ADRESY . ADRESAR_STRANKY . ODDELOVAC_PRIPONY . 
 		Styl::PRIPONA_STYLU);
+define("CESTA_STYL_JQUERY_UI", CESTA_ADRESAR_JQUERY_UI . ODDELOVAC_ADRESY . Styl::ADRESAR_JQUERY_UI_STYLY . 
+		ODDELOVAC_ADRESY . Styl::ADRESAR_JQUERY_UI_TEMA . ODDELOVAC_ADRESY . Styl::STYL_JQUERY_UI);
 
 // cesty ke skriptům
-define('CESTA_DEFAULTNI_SKRIPT', CESTA_ADRESAR_SCRIPTU . ODDELOVAC_ADRESY . Skript::SOUBOR_DEFAULTNI_SCRIPT);
+define('CESTA_DEFAULTNI_SKRIPT', CESTA_ADRESAR_SCRIPTU . ODDELOVAC_ADRESY . Skript::DEFAULTNI_SCRIPT);
 define('CESTA_INDIV_SKRIPT', CESTA_ADRESAR_STRANKY . ODDELOVAC_ADRESY . ADRESAR_STRANKY . ODDELOVAC_PRIPONY .
 		Skript::PRIPONA_SKRIPTU);
+define("CESTA_SKRIPT_JQUERY_UI", CESTA_ADRESAR_JQUERY_UI . ODDELOVAC_ADRESY . Skript::ADRESAR_JQUERY_UI_SKRIPT . 
+		ODDELOVAC_ADRESY . Skript::SKRIPT_JQUERY_UI);
+define('CESTA_SCRIPT_KNIHOVNA_FUNKCI', CESTA_ADRESAR_SCRIPTU . ODDELOVAC_ADRESY .
+			Skript::SKRIPT_KNIHOVNA_FUNKCI);
 
 /**
  * Abstraktní třída pro práci z odkazy
@@ -58,7 +65,7 @@ abstract class Odkaz{
 	/* KONSTRUKTOR */
 	public function __construct($cesta){
 		if(!file_exists($cesta)){
-			throw new Exception('Soubor neexistuje!');
+			throw new Exception("Soubor neexistuje! - '" . $cesta . "'");
 		}
 		$this->cesta = $cesta;
 		$this->adresa = uni_cesta_na_uni_adresu($cesta);
@@ -81,8 +88,10 @@ abstract class Odkaz{
 		CESTA_GLOBALNI_STYL, 
 		CESTA_STYL_SABLONY, 
 		CESTA_STYL_PRIHLASOVACIHO_FORMULARE,
+		CESTA_STYL_JQUERY_UI,
 		
-		CESTA_DEFAULTNI_SKRIPT
+		CESTA_DEFAULTNI_SKRIPT,
+		CESTA_SCRIPT_KNIHOVNA_FUNKCI
 	];
 	private static $objekty = [];
 	
@@ -114,7 +123,7 @@ abstract class Odkaz{
 	 */
 	public static function pridej_defaultni_odkazy(){
 		self::pridej_odkaz(new Skript(Skript::ADRESA_JQUERY, false, true));
-		self::pridej_odkaz(new Skript(Skript::ADRESA_JQUERY_UI, false, true));
+		self::pridej_odkaz(new Skript(CESTA_SKRIPT_JQUERY_UI, false, false));
 		
 		foreach (self::$defaultni_odkazy as $cesta_k_odkazu){
 			self::pridej_odkaz($cesta_k_odkazu);
@@ -158,9 +167,15 @@ final class Styl extends Odkaz{
 	const PRIPONA_STYLU = "css";
 	
 	// soubory stylů
-	const SOUBOR_STYL = 'style.css';
-	const SOUBOR_STYL_SABLONY = 'sablona.css';
-	const SOUBOR_STYL_PRIHLASOVACIHO_FORMULARE = 'prihlasovaci_formular.css';
+	const STYL = 'style.css';
+	const STYL_SABLONY = 'sablona.css';
+	const STYL_PRIHLASOVACIHO_FORMULARE = 'prihlasovaci_formular.css';
+	const STYL_JQUERY_UI = "jquery-ui-1.10.3.custom.min.css";
+	const STYL_DIALOGU = "dialog.css";
+	const STYL_DIALOGU_URL = "dialog_url.css";
+	
+	const ADRESAR_JQUERY_UI_STYLY = "css";
+	const ADRESAR_JQUERY_UI_TEMA = "custom-theme";
 }
 
 /**
@@ -205,12 +220,16 @@ final class Skript extends Odkaz{
 	const PRIPONA_SKRIPTU = 'js';
 	
 	// skripty
-	const SOUBOR_DEFAULTNI_SCRIPT = 'default.js';
-	const SOUBOR_SCRIPT_KNIHOVNA_FUNKCI = 'funkce.js';
+	const SKRIPT_JQUERY_UI = "jquery-ui-1.10.3.custom.min.js";
+	const DEFAULTNI_SCRIPT = 'default.js';
+	const SKRIPT_KNIHOVNA_FUNKCI = 'funkce.js';
+	const SKRIPT_DIALOF_URL = "dialogUrl.js";
 	
 	// adresy externích knihoven
 	const ADRESA_JQUERY = '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js';
-	const ADRESA_JQUERY_UI = '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js';
+	//const ADRESA_JQUERY_UI = '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js';
+	
+	const ADRESAR_JQUERY_UI_SKRIPT = "js";
 }
 
 /**************************************************
@@ -228,26 +247,29 @@ function vypis_meta_opravneni(){
 }
 
 /**
- * Přidá do seznamu skriptů link na skript knihovny funkcí
+ *  Zařídí vše potřebné pro fungování dialogů
  */
-function link_na_script_knihovna_funkci(){
-	define('CESTA_SCRIPT_KNIHOVNA_FUNKCI', CESTA_ADRESAR_SCRIPTU . ODDELOVAC_ADRESY .
-			Skript::SOUBOR_SCRIPT_KNIHOVNA_FUNKCI);
-	Odkaz::pridej_odkaz(CESTA_SCRIPT_KNIHOVNA_FUNKCI);
+function linky_dialog(){
+	define('CESTA_ADRESAR_DIALOGU', $_SERVER['DOCUMENT_ROOT'] . ODDELOVAC_ADRESY .  ADRESAR_DIALOGU);
+	define('CESTA_STYL_DIALOG', CESTA_ADRESAR_DIALOGU . ODDELOVAC_ADRESY . Styl::STYL_DIALOGU);
+	Odkaz::pridej_odkaz(CESTA_STYL_DIALOG);
 }
 
 /**
  *  Zařídí vše potřebné pro fungování dialogu url
  */
 function linky_dialog_url(){
-	link_na_script_knihovna_funkci();
+	linky_dialog();
 	
-	define('CESTA_ADRESAR_DIALOGU_URL', CESTA_ADRESAR_DIALOGU . ODDELOVAC_ADRESY .  ADRESAR_DIALOGU_URL);
-	define('CESTA_STYL_DIALOG_URL', CESTA_ADRESAR_DIALOGU_URL . ODDELOVAC_ADRESY . Styl::SOUBOR_STYL);
-	define('CESTA_SOUBOR_DIALOG_URL', CESTA_ADRESAR_DIALOGU_URL . ODDELOVAC_ADRESY . SOUBOR_DIALOG_URL);
+	define('CESTA_ADRESAR_DIALOG_URL', CESTA_ADRESAR_DIALOGU . ODDELOVAC_ADRESY .  ADRESAR_DIALOGU_URL);
+	
+	define('CESTA_STYL_DIALOG_URL', CESTA_ADRESAR_DIALOG_URL . ODDELOVAC_ADRESY . Styl::STYL_DIALOGU_URL);
+	define('CESTA_SOUBOR_DIALOG_URL', CESTA_ADRESAR_DIALOG_URL . ODDELOVAC_ADRESY . SOUBOR_DIALOG_URL);
+	define('CESTA_SCRIPT_DIALOG_URL', CESTA_ADRESAR_DIALOG_URL . ODDELOVAC_ADRESY . Skript::SKRIPT_DIALOF_URL);
 	
 	Odkaz::pridej_odkaz(CESTA_STYL_DIALOG_URL);
 	$GLOBALS['html_pro_skripty'][] = CESTA_SOUBOR_DIALOG_URL;
+	Odkaz::pridej_odkaz(CESTA_SCRIPT_DIALOG_URL);
 }
 
 /**
@@ -301,10 +323,3 @@ Odkaz::pridej_defaultni_odkazy();
 	?>
 </head>
 
-<?php
-
-foreach ($GLOBALS['html_pro_skripty'] as $soubor_html_element){
-	require $soubor_html_element;
-}
-
-?>
