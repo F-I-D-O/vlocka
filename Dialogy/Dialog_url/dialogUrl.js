@@ -11,6 +11,9 @@ window.dialogUrl = {
 		this.dialogDiv.dialog({
 			autoOpen: false,
 			modal: true,
+			draggable: false,
+			resizable: false,
+			width: 800,
 			buttons: {
 				"Vytvoř odkaz": function() {
 					dialogUrl.vsechnaPole.removeClass( "ui-state-error" );

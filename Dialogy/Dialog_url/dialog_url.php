@@ -3,9 +3,12 @@
 	<form>
 		<fieldset>
 			<label for="name">URL</label>
-			<input type="text" name="url" id="url" class="text ui-widget-content ui-corner-all" />
+			<input type="text" name="url" id="url" class="dialog_url-pole text ui-widget-content ui-corner-all" />
 			<label for="text_odkazu">Text odkazu</label>
-			<input type="text" name="text_odkazu" id="text_odkazu" class="text ui-widget-content ui-corner-all" />
+			<input type="text" 
+				   name="text_odkazu" 
+				   id="text_odkazu" 
+				   class="dialog_url-pole text ui-widget-content ui-corner-all" />
 		</fieldset>
 	</form>
 </div>
