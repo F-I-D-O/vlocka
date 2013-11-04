@@ -38,6 +38,18 @@ CKEDITOR.on('instanceReady', function( ev ){
 
 	editor.addCommand( 'link', {
 		exec: function( editor ) {
+			function getSelectionHtml(editor) {
+				var sel = editor.getSelection();
+				var ranges = sel.getRanges();
+				var el = new CKEDITOR.dom.element("div");
+				for (var i = 0, len = ranges.length; i < len; ++i) {
+					el.append(ranges[i].cloneContents());
+				}
+				return el.getHtml();
+			}
+
+			alert( getSelectionHtml(editor) );
+			
 			//editor.insertHtml('<a href="gdfgdgdfgd">rrrrrrrr</a>');
 			//CKEDITOR.vlozOdkaz();
 			// odkaz na text označený v textarea
