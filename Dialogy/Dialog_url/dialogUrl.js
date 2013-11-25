@@ -34,10 +34,13 @@ window.dialogUrl = {
 		this.urlPole.on("paste", this.vlozenaUrl);
 	},
 
-	otevriDialogUrl: function (oznacenyText){
+	otevriDialogUrl: function (oznacenyText, href){
 		this.dialogDiv.dialog( "open" );
 		this.textPole.val(oznacenyText);
-		if(jeOdkaz(oznacenyText)){
+		if(href !== null){
+			this.urlPole.val(href);
+		}
+		else if(jeOdkaz(oznacenyText)){
 			this.urlPole.val(oznacenyText);
 		}
 		else{

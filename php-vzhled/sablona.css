@@ -27,36 +27,36 @@
 	height: 270px; 
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+	margin-bottom: 5px;
 }
 
-#zahlavi {
+#logo {
 	float: left;
 	height: 265px; 
 	width: 266px;
 }
 
-#zahlavi img {
+#logo img {
 	width: 245px;
 	margin: 10px
 }
 
-#hlavicka {
+#nadpis_stranek {
 	width: 734px; 
 	height: 142px; 
-	background-color: #26316C;
 	border-top-right-radius: 20px; 
 	margin: 0 0 0px 0;
 	float: right;
 }
 
-#hlavicka img {
+#nadpis_stranek img {
 	margin: 15px 0px 0px 70px;
 }
 
 /* horní menu */
 #menu {
 	float: left;
-	width: 480px;
+	width: 476px;
 	height: 30px;
 	padding: 0px 0 0px 0px;
 	margin: 0px 4px 4px 0;
@@ -64,7 +64,7 @@
 	font-weight: bold;
 	text-align: center;
 	border-radius: 5px;
-	border: 1px solid white;
+	border: 3px solid #ffb81c;
 }
 
 #menu a {
@@ -89,19 +89,19 @@
 }
 
 #odkaz_prijimame_cleny {
-	width: 82px; 
+	width: 81px; 
 }
 
 #odkaz_o_nas {
-	width: 62px; 
+	width: 61px; 
 }
 
 #odkaz_skauting {
-	width: 82px; 
+	width: 81px; 
 }
 
 #odkaz_kontakt {
-	width: 82px; 
+	width: 81px; 
 }
 
 #odkaz_fotokronika {
@@ -118,9 +118,7 @@
 	height: 81px;
 	padding: 0 5px 5px 5px;
 	margin: 0 0px 0px 0px;
-	background: #F9BE3C;
 	font-size: 13px;
-	border: 1px solid white; 
 	border-radius: 5px;
 }
 
@@ -140,7 +138,6 @@
 	color: #251200;
 	padding: 0 0 0 0;
 	margin: 0px 0 0 0;
-	background: #26316C;
 }
 
 #odkazy_spravy a {
@@ -198,7 +195,6 @@
 
 .odkazy {
 	width: 255px;
-	background-color: #FF8800;
 	border-radius: 10px;
 	padding: 0 0 10px 0;
 	font-size: 12px;
@@ -228,8 +224,12 @@
 }
 
 .odkazy a:hover, #odkazy_spravy a:hover {
-	background: #F9BE3C;
+	background: #FF8800;
 	color: #000037;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.odkazy, #uvod, #prihlasovaci_formular, #novinky {
+	background: #ffb81c;
 }

@@ -11,7 +11,7 @@ define('ADRESA_OBRAZEK_ZAHLAVI', ADRESA_ADRESARE_OBRAZKU_SABLONY . ODDELOVAC_ADR
  * ZAČÁTEK HTML KÓDU
  ***********************************************-->
 
-		<div id="zahlavi">
+		<div id="logo">
 			<a href="<?php echo ADRESA_STRANEK ?>">
 				<img src="<?php echo ADRESA_OBRAZEK_ZAHLAVI ?>" alt="Domů">
 			</a>

@@ -18,7 +18,7 @@ body {
 	font-family: arial;
 	font-size: 14px;
 	text-align: justify;
-	background: #F9BE3C;
+	background: #E6DD7E;
 	margin: 0px; /* musí zde být, body má margin defaultní, ač to vypadá jako hovadina!! */
 	padding: 5px;
 }
@@ -84,9 +84,16 @@ button, input[type="submit"] {
 	cursor: pointer;
 	margin: 10px;
 	padding: 5px;
-	border: 0px;
-	border-radius: 10px
+	border: 3px solid #7E87E6;
+	background: #26316C;
+	color: #F9BE3C;
+	font-weight: bold;
+	border-radius: 15px
 		
+}
+
+button:hover, input[type="submit"]:hover {
+	border: 3px solid white;
 }
 
 input[type="password"], input[type="text"] {
@@ -235,6 +242,11 @@ input[type="password"], input[type="text"], textarea {
 .sprava{
 	color: #008B45;
  }
+ 
+.sprava_tlacitko{
+	background: #008B45;
+ }
+ 
 
 
 /*

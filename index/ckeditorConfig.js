@@ -4,10 +4,13 @@ $(document).ready(function(){
  * nastavení CKEditoru pro vložení nové novinky
  */
 
-CKEDITOR.editorConfig = function( config ) {
-	
+/**
+ * Funkce pro konfiguraci konkrétní instance editoru.
+ * @param {type} config Defaultní konfigurace.
+ * @returns {undefined}
+ */
+ CKEDITOR.editorConfig = function( config ) {
 	config.uiColor = '#008B45';
-	
 	config.toolbar = [
 		{ name: 'source', items: [ 'Source' ] },
 //		{ name: 'clipboard', items: [ 'Cut', 'Copy', 'Paste' ] },
@@ -16,21 +19,19 @@ CKEDITOR.editorConfig = function( config ) {
 			items: [ 'Bold', 'Italic', 'Underline', 'Strike', '-', 'Subscript', 'Superscript', '-', 'list', 'indent', 
 				'-', 'SpecialChar', '-', 'Link', 'Unlink' ] }
 	];
-	
-	// po vlastní implementaci funkce onload přestalo fungovat, nahrazeno ve funkci onload
-	config.linkShowTargetTab = false;
-	config.linkShowAdvancedTab = false;
-	
-	
 };
 
+/**
+ * Určuje co se stane když je instance editoru připravena.
+ * @param {type} ev Data k události poskytnutá CKEditorem.
+ */
 CKEDITOR.on('instanceReady', function( ev ){
 	var editor = ev.editor;
 //	editor.getCommand('link').disable();
 
-	CKEDITOR.volajici = editor;
+	CKEDITOR.aktualniEditor = editor;
 	CKEDITOR.vlozOdkaz = function(odkaz){
-		CKEDITOR.volajici.insertHtml(odkaz);
+		CKEDITOR.aktualniEditor.insertHtml(odkaz);
 	};
 
 	// nastaví dialog url
@@ -47,16 +48,18 @@ CKEDITOR.on('instanceReady', function( ev ){
 				}
 				return el.getHtml();
 			}
-
-			alert( getSelectionHtml(editor) );
+			//alert(editor.getSelection().getStartElement( ).getName());
+			if(editor.getSelection().getStartElement().getName() === "a"){
+				alert("gdfgdfgdfgdfgdfgdfg");
+				var href = editor.getSelection().getStartElement().getAttribute("href"); 
+				editor.getSelection().selectElement(editor.getSelection().getStartElement());
+			}
 			
-			//editor.insertHtml('<a href="gdfgdgdfgd">rrrrrrrr</a>');
-			//CKEDITOR.vlozOdkaz();
 			// odkaz na text označený v textarea
 			var oznacenyText = editor.getSelection().getSelectedText().toString();
 			
 			// zavolá Jquery UI dialog pro vložení odkazu
-			dialogUrl.otevriDialogUrl(oznacenyText);
+			dialogUrl.otevriDialogUrl(oznacenyText, href);
 		}
 	} );
 });
