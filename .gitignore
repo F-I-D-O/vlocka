@@ -1,0 +1,23 @@
+*.class
+*.pyc
+*.pyo
+*.db
+
+**archiv/
+**Archiv/
+**nepouzite/
+**nepoužité/
+**podklady/
+**/Velké/
+
+/bodovani V+S
+/dokumenty
+/fotky
+/jquery-ui-1.10.3.custom
+/kronika
+/nbproject/private/
+/Script/ckeditor/
+/secure
+/TB skauti
+
+
